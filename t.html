@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop setInterval Example</title>
+    <script>
+        let intervalId;
+
+        function startInterval() {
+            intervalId = setInterval(() => {
+                console.log('Interval running...');
+            }, 1000);
+        }
+
+        function stopInterval() {
+            clearInterval(intervalId);
+            console.log('Interval stopped.');
+        }
+
+//setimeOut
+let timeoutId; 
+function startTimeout() {
+     timeoutId = setTimeout(() => {
+         console.log('Timeout executed.'); 
+        }, 5000); // Executes after 5 seconds 
+    } 
+    function stopTimeout() {
+         clearTimeout(timeoutId);
+          console.log('Timeout stopped.'); 
+        }
+
+    </script>
+</head>
+<body>
+    <button onclick="startInterval()">Start Interval</button>
+    <button onclick="stopInterval()">Stop Interval</button>
+
+
+    <button onclick="startTimeout()">Start Timeout</button>
+     <button onclick="stopTimeout()">Stop Timeout</button>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibration API Example</title>
+</head>
+<body>
+    
+</body>
+</html>
+</body>
+</html>
